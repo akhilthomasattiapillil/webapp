@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+      <body>
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Fibinocci Series Generator</a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+               </div>
+               <!--/.navbar-collapse -->
+            </div>
+         </nav>
+         <!-- Main jumbotron for a primary marketing message or call to action -->
+         <div class="jumbotron">
+            <div class="container">
+               <br />
+                {% if not output %}
+               <div class="row">
+                  <div class="col-md-offset-5 col-md-3">
+                     <h4>Enter number of fibinocci numbers to be generated.</h4>
+                     <form method="post" class="navbar-form navbar-right" action="">
+                        <div class="form-group">
+                           <input type="number" id="nterm" name="nterm" class="form-control input-lg chat-input" placeholder="eg: 8" />
+                           <button type="submit" class="btn btn-lg btn-info">Submit</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               {% else %}
+               <div>
+		  
+                 <font size="5"> These are the fibinocci numbers: {{output}}</font>
+               </div>
+		<div>
+		 <form><input type="button" class="btn btn-lg btn-info" value="Go back!" onclick="history.back()"></form>
+		</div>
+               {% endif %}
+            </div>
+         </div>
+         <footer>
+            <p>&copy; Akhil 2019</p>
+         </footer>
+         </div> 
+      </body>
+   </html>

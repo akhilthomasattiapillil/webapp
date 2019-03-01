@@ -1,0 +1,26 @@
+﻿sudo apt update
+sudo apt search <software name>
+sudo apt install <software name
+
+
+pwd
+ls
+cd
+
+
+curl=program for editing text(one page)
+wget-r=get everything in that page
+tr= seperates words (“ ”,with space and line)
+sort
+unique= find unique words
+wc-1=gives number of words
+
+mkdir <folder name>=create new directory
+cat requirements= to display the contets of the files in the terminal itself.
+
+
+man <command>=description, help
+pip install -r <requirements.txt>=to install requirements file
+chmod +x main.py = to give excecute premission to a script file.
+
+back button, list

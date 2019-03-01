@@ -1,0 +1,28 @@
+sudo /etc/init.d/uwsgi status 
+
+systemctl status uwsgi.service
+
+systemctl status nginx.service
+
+to transfer files from system to instance in amazon sudo scp -i /home/akhil/Downloads/akhil-key-pair-us-east-ohio.pem /home/akhil/fibgen.zip ubuntu@ec2-18-225-37-41.us-east-2.compute.amazonaws.com:~/ 
+
+git commands
+
+…or create a new repository on the command line==
+echo "# cloud_assignment1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.uc.edu/thoma4ak/cloud_assignment1.git
+git push -u origin master
+
+…or push an existing repository from the command line===
+git remote add origin https://github.uc.edu/thoma4ak/cloud_assignment1.git
+git push -u origin master
+
+
+git status
+git add .======= add. ==add all, or add <filename> 
+git commit -m <"First commit"(message)>
+git push origin master= to upload
+
